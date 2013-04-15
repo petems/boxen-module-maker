@@ -23,7 +23,19 @@ Jeweler::Tasks.new do |gem|
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-task :default => :test
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec) do |spec|
+  spec.rspec_opts = '--color --format=documentation -I lib -I spec'
+  spec.pattern = "spec/**/*_spec.rb"
+end
+
+RSpec::Core::RakeTask.new(:rcov) do |spec|
+  spec.rspec_opts = '-I lib -I spec'
+  spec.pattern = 'spec/**/*_spec.rb'
+  spec.rcov = true
+end
+
+task :default => [:spec]
 
 require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
