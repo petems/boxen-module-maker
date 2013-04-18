@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    boxen-module-maker (0.0.1)
+    boxen-module-maker (0.1.2)
 
 GEM
   remote: https://rubygems.org/

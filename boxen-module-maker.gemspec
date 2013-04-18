@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
   spec.license = 'MIT'
 
   spec.add_development_dependency 'rspec'
+  spec.add_runtime_dependency 'git'
 
   spec.default_executable = %q{boxen-module-maker}
   spec.files         = `git ls-files`.split("\n")
