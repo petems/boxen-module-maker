@@ -14,19 +14,27 @@ ls
 CONTRIBUTING.md	Gemfile		Gemfile.lock	LICENSE		README.md	manifests	script		spec
 ```
 
-So at the moment, all it does is make a folder and clone the [puppet-template](https://github.com/boxen/puppet-template) folder. Future features will be to customise the specs and such.
+Currently, it will create a folder with your given name with the word `puppet` in front of it,
+clone [puppet-template](https://github.com/boxen/puppet-template) folder,
+and edit the manifest file and spec file so the specs will pass immediately.
 
-== Contributing to boxen-module-maker
+## TO-DOS
+
+* Clean up the structure (I took it from a template and kinda bodged it together)
+* Make it automatically run `script/cibuild` on the folder
+* Fix up the specs (ie. Add some...)
+
+## Contributing to boxen-module-maker
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
-* Start a feature/bugfix branch.
+* Start a feature/bugfix branch with a sensible name
 * Commit and push until you are happy with your contribution.
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-== Copyright
+## Copyright
 
 Copyright (c) 2013 Peter M Souter. See LICENSE.txt for
 further details.
