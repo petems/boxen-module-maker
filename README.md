@@ -3,7 +3,7 @@
 A gem for creating boxen modules easier! :)
 
 ## Basic Use
-```
+```bash
 $ gem install boxen-module-maker
 $ boxen-module-maker new_app
 boxen-module-maker: [CREATE FOLDER] Making 'puppet-new_app'
